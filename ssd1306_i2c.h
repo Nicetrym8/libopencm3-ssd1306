@@ -24,8 +24,10 @@
 #ifndef SSD1306_I2C_H
 #define SSD1306_I2C_H 
 
+#if defined(STM32F1) || defined(STM32F2)
 #include <libopencm3/stm32/rcc.h>
 #include <libopencm3/stm32/i2c.h>
+#endif
 #ifndef SSD1306_NOSTDLIB
 #include <stdlib.h>
 #endif
